@@ -1,36 +1,37 @@
 import React from "react";
+import AddButton from "../UI/AddButton";
 
 const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
   return (
-    <div className="w-40 sm:w-56 md:w-72 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl p-2 sm:p-4 md:p-6 shadow-sm flex flex-col hover:shadow-md transition-shadow duration-300 hover:translate-y-[-5px] transform transition-transform">
+    <div className="w-40 sm:w-56 md:w-60 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl p-2 sm:p-4 md:p-5 shadow-sm flex flex-col transition-all duration-300 active:shadow-md active:translate-y-[-2px] hover:shadow-md hover:translate-y-[-5px] transform">
       {/* Title and Price */}
-      <div className="mb-1 sm:mb-3 md:mb-6 text-center">
-        <h3 className="text-base sm:text-xl md:text-3xl font-bold text-gray-800 line-clamp-1">
+      <div className="mb-1 sm:mb-2 md:mb-3 text-center">
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 line-clamp-1">
           {title}
         </h3>
-        <p className="text-lg sm:text-2xl md:text-4xl font-semibold text-gray-500 mt-0.5 sm:mt-2">
+        <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-700 mt-0.5 sm:mt-1">
           ${price}
         </p>
       </div>
 
       {/* Food Image */}
-      <div className="flex-grow flex justify-center mb-2 md:mb-6 transition-transform duration-300 hover:scale-105">
+      <div className="flex-grow flex justify-center mb-2 md:mb-3 transition-all duration-300 hover:scale-105 active:scale-105">
         <img
           src={image}
           alt={title}
-          className="w-24 h-24 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-full object-cover"
+          className="w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-full object-cover"
         />
       </div>
 
       {/* Footer with calories, time, and add button */}
       <div className="flex items-center justify-between">
-        <div className="flex flex-col gap-0.5 sm:gap-1 md:gap-2">
+        <div className="flex flex-col gap-0.5 sm:gap-1">
           {/* Calories */}
-          <div className="flex items-center gap-0.5 sm:gap-1 md:gap-2">
-            <span className="text-orange-500 text-xs sm:text-sm md:text-base">
+          <div className="flex items-center gap-0.5 sm:gap-1">
+            <span className="text-orange-500 text-xs sm:text-sm">
               🔥
             </span>
-            <span className="text-[10px] sm:text-sm md:text-xl font-semibold text-gray-700">
+            <span className="text-[10px] sm:text-sm md:text-base font-semibold text-gray-700">
               {calories} Cal
             </span>
           </div>
@@ -40,7 +41,7 @@ const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
             <span className="text-gray-400">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-2.5 w-2.5 sm:h-4 sm:w-4 md:h-5 md:w-5"
+                className="h-2.5 w-2.5 sm:h-3 sm:w-3 md:h-4 md:w-4"
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -51,32 +52,14 @@ const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
                 />
               </svg>
             </span>
-            <span className="text-[10px] sm:text-sm md:text-xl text-gray-400">
+            <span className="text-[10px] sm:text-sm md:text-base text-gray-400">
               {time}m
             </span>
           </div>
         </div>
 
         {/* Add Button */}
-        <button
-          onClick={onAdd}
-          className="bg-green-500 hover:bg-green-600 text-white w-6 h-6 sm:w-9 sm:h-9 md:w-12 md:h-12 rounded sm:rounded-lg md:rounded-xl flex items-center justify-center transition-colors duration-300 hover:shadow-lg active:scale-95 transform transition-transform"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-3 w-3 sm:h-5 sm:w-5 md:h-6 md:w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 4v16m8-8H4"
-            />
-          </svg>
-        </button>
+        <AddButton onClick={onAdd} />
       </div>
     </div>
   );

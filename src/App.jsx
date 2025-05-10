@@ -1,20 +1,34 @@
-import FoodCard from "./Components/FoodCard";
+import { useState } from "react";
+import Meals from "./Components/Meals";
 import Header from "./Layout/Header";
-import pizzaImage from "./assets/images/pizza.jpg";
+import Cart from "./Components/Cart/Cart";
+import Footer from "./Layout/Footer";
+import sampleMeals from "./data/sampleMeals";
+import { CartProvider } from "./context/CartContext";
 
 const App = () => {
+  const [meals] = useState(sampleMeals);
+  const [cartIsShown, setCartIsShown] = useState(false);
+  
+  const showCartHandler = () => {
+    setCartIsShown(true);
+  };
+
+  const hideCartHandler = () => {
+    setCartIsShown(false);
+  };
+
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col">
-      <Header />
-      <FoodCard
-        title="Melting Cheese Pizza"
-        price={10.99}
-        image={pizzaImage}
-        calories={44}
-        time={20}
-        onAdd={() => alert("Item added to cart!")}
-      />
-    </div>
+    <CartProvider>
+      <div className="min-h-screen bg-gray-50 flex flex-col">
+        {cartIsShown && <Cart onClose={hideCartHandler} />}
+        <Header onShowCart={showCartHandler} />
+        <div className="flex-1 flex flex-col min-h-0">
+          <Meals meals={meals} />
+        </div>
+        <Footer />
+      </div>
+    </CartProvider>
   );
 };
 
