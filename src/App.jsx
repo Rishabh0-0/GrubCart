@@ -9,7 +9,7 @@ import { CartProvider } from "./context/CartContext";
 const App = () => {
   const [meals] = useState(sampleMeals);
   const [cartIsShown, setCartIsShown] = useState(false);
-  
+
   const showCartHandler = () => {
     setCartIsShown(true);
   };
