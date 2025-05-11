@@ -18,10 +18,16 @@ A modern, mobile-first food cart application built with React and Tailwind CSS. 
 
 ---
 
-## 🖼️ Demo
+## 🚀 Live Demo
 
-![Mobile Cart Screenshot](./screenshot.png)
-> *(Replace with your app screenshot or link to a live demo)*
+Check out the live version here: [Live Demo](https://rishabh0-0.github.io/GrubCart/)
+
+## 🖼️ Screenshots
+
+![PC Screenshot](./Screenshots/pc%20-%20viewport.png)
+![PC Cart Screenshot](./Screenshots/pc%20cart-view.png)
+![Mobile Screenshot](./Screenshots/mobile-view.png)
+![Mobile Cart Screenshot](./Screenshots/mobile%20cart-view.png)
 
 ---
 
@@ -34,29 +40,4 @@ A modern, mobile-first food cart application built with React and Tailwind CSS. 
 
 ---
 
-## 📦 Getting Started
-
-1. **Install dependencies:**
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-2. **Start the dev server:**
-   ```bash
-   npm run dev
-   # or
-   yarn dev
-   ```
-3. **Open [http://localhost:5173](http://localhost:5173) in your browser.**
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
 ## © {YEAR} GrubCart — Made with ❤️ for food lovers.
-
