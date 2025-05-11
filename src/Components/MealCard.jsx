@@ -1,6 +1,6 @@
 import React from "react";
 
-const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
+const MealCard = ({ title, price, image, calories, time, onAdd }) => {
   return (
     <div className="w-40 sm:w-56 md:w-72 bg-white rounded-xl sm:rounded-2xl md:rounded-3xl p-2 sm:p-4 md:p-6 shadow-sm flex flex-col hover:shadow-md transition-shadow duration-300 hover:translate-y-[-5px] transform transition-transform">
       {/* Title and Price */}
@@ -13,7 +13,7 @@ const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
         </p>
       </div>
 
-      {/* Food Image */}
+      {/* Meal Image */}
       <div className="flex-grow flex justify-center mb-2 md:mb-6 transition-transform duration-300 hover:scale-105">
         <img
           src={image}
@@ -82,4 +82,4 @@ const FoodCard = ({ title, price, image, calories, time, onAdd }) => {
   );
 };
 
-export default FoodCard;
+export default MealCard;
