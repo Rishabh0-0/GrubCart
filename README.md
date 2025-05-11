@@ -28,7 +28,7 @@ Check out the live version here: [Live Demo](https://rishabh0-0.github.io/GrubCa
 
 ![PC Cart Screenshot](./Screenshots/pc%20cart-view.png)
 
-![Mobile Screenshot](./Screenshots/mobile-view.png) ![Mobile Cart Screenshot](./Screenshots/mobile%20cart-view.png)
+![Mobile Screenshot](./Screenshots/mobile-view.png)               ![Mobile Cart Screenshot](./Screenshots/mobile%20cart-view.png)
 
 ---
 
