@@ -25,8 +25,11 @@ Check out the live version here: [Live Demo](https://rishabh0-0.github.io/GrubCa
 ## 🖼️ Screenshots
 
 ![PC Screenshot](./Screenshots/pc%20-%20viewport.png)
+
 ![PC Cart Screenshot](./Screenshots/pc%20cart-view.png)
+
 ![Mobile Screenshot](./Screenshots/mobile-view.png)
+
 ![Mobile Cart Screenshot](./Screenshots/mobile%20cart-view.png)
 
 ---
@@ -40,4 +43,4 @@ Check out the live version here: [Live Demo](https://rishabh0-0.github.io/GrubCa
 
 ---
 
-## © {YEAR} GrubCart — Made with ❤️ for food lovers.
+## © 2025 GrubCart — Made with ❤️ for food lovers.
